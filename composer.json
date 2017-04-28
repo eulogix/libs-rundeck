@@ -1,0 +1,21 @@
+{
+    "name": "eulogix/libs-rundeck",
+    "type": "library",
+    "description": "Eulogix PHP Rundeck libraries",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pietro Baricco",
+            "email": "pietro@eulogix.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eulogix\\Lib\\": "src/Eulogix/Lib/"
+        }
+    }
+}
