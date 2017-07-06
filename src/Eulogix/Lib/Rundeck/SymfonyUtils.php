@@ -32,6 +32,24 @@ class SymfonyUtils {
     }
 
     /**
+     * @return string
+     */
+    public function getCommandUser()
+    {
+        return $this->commandUser;
+    }
+
+    /**
+     * @param string $commandUser
+     * @return $this
+     */
+    public function setCommandUser($commandUser)
+    {
+        $this->commandUser = $commandUser;
+        return $this;
+    }
+
+    /**
      * @param Command $command
      * @param bool $includeDefaultOptions
      * @return RundeckJob
