@@ -64,10 +64,13 @@ class RundeckClient {
 
     /**
      * @return array
+     * @throws \Exception
      */
     public function getProjects() {
         $this->setOutputFormatJson();
         $arr = $this->fetchArray("/api/1/projects");
+        if(isset($arr['error']))
+            throw new \Exception($arr['errorCode'] . $arr['message']);
         return $arr;
     }
 
